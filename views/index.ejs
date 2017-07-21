@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>URL Shortener</title>
+</head>
+<body>
+  <p>
+    Please enter a URL in the following format to obtain a shortened URL:
+    https://whimsical-tugboat.glitch.me/https://slickdeals.net/
+  </p>
+  <h1>
+    URL shortener
+  </h1>
+  <h2>
+    Original URL
+  </h2> 
+  <h2>
+    Short cut URL
+  </h2>
+<ul class="urls">
+  <% for(var i=0; i<urls.length; i++) {%>
+    <li class="quote">
+      <span><%= urls[i].name %></span>
+      
+    </li>
+  <li><span><%= urls[i].quote %></span></li>
+  <% } %>
+  
+</ul>
+<!--   
+   <form action="/url" method="POST">
+    <input type="text" placeholder="full URL" name="name">
+    <input type="text" placeholder="short URL" name="quote">
+    <button type="submit">Submit</button>
+  </form> -->
+</body>
+</html>
